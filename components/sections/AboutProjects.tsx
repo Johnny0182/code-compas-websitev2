@@ -10,8 +10,8 @@ export function AboutProjects() {
         <Reveal><p className="section-kicker"><span>02</span>Selected projects</p><h2 className="projects-title">A few ways we make<br />the choice feel easy.</h2></Reveal>
         <div className="projects-grid">
           {siteConfig.projects.map((project, index) => (
-            <Reveal key={project.number} className={index === 0 ? "project-card project-card--featured" : "project-card"} delay={index * 0.05}>
-              <ImagePlaceholder number={project.number} path={project.imagePath} />
+            <Reveal key={project.number} className="project-card" delay={index * 0.05}>
+              <ImagePlaceholder path={project.imagePath} alt={project.imageAlt} />
               <div className="project-meta"><span>{project.category}</span><span>{project.year}</span></div>
               <h3>{project.title}</h3><p>{project.description}</p><a href="#contact">View project <span aria-hidden="true">↗</span></a>
             </Reveal>

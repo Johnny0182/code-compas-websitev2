@@ -1,10 +1,9 @@
-export function ImagePlaceholder({ number, path }: { number: string; path: string }) {
+import Image from "next/image";
+
+export function ImagePlaceholder({ path, alt }: { path: string; alt: string }) {
   return (
-    <div className={`project-visual project-visual--${number}`} role="img" aria-label={`Image placeholder for project ${number}`}>
-      {/* IMAGE SWAP: add the file at the path below, then replace this block with Next.js <Image fill sizes="..." />. */}
-      <div className="placeholder-grid" aria-hidden="true" />
-      <span className="placeholder-number">{number}</span>
-      <span className="placeholder-path">image pending<br />{path}</span>
+    <div className="project-visual">
+      <Image src={path} alt={alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1440px) 50vw, 704px" />
     </div>
   );
 }

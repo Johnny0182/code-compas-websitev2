@@ -14,7 +14,10 @@ export function Services() {
                 <div className="service-heading">
                   <p className="service-label">{service.label}</p>
                   <h3>{service.title}</h3>
-                  <p className="service-price">{service.price}</p>
+                  <p className="service-price" aria-label={service.price}>
+                    <span>Starting at</span>
+                    <strong>{service.price.replace("STARTING AT ", "")}</strong>
+                  </p>
                 </div>
                 <p className="service-description">{service.description}</p>
                 {index === 3 ? (
