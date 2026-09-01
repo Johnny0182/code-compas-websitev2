@@ -32,18 +32,15 @@ export const siteConfig = {
   contact: {
     heading: "Let’s build something that works for your business.",
     body: "Tell us what you’re trying to change. We’ll come back with a clear next step.",
-    email: "[CONTACT EMAIL]",
+    email: "Use the inquiry form",
     socialLabel: "Instagram",
-    socialUrl: "[INSTAGRAM URL]",
   },
   footerStatement: "Digital strategy, design, development, and automation for ambitious businesses.",
   seo: {
-    title: "[AGENCY NAME] — Digital Agency in [CITY OR SERVICE AREA]",
+    title: "Code Compas — Digital Strategy, Design, and Development",
     description: "Strategy, design, development, and automation built around real business goals.",
-    ogTitle: "[AGENCY NAME] — Make your business the obvious choice",
+    ogTitle: "Code Compas — Make your business the obvious choice",
     ogDescription: "A practical digital agency for ambitious businesses.",
-    siteName: "[AGENCY NAME]",
-    canonicalUrl: "https://example.com",
-    socialImage: "/images/social-preview.webp",
+    siteName: "Code Compas",
   },
 } as const;

@@ -5,7 +5,6 @@ import { siteConfig } from "@/lib/site-config";
 export function Hero() {
   return (
     <section id="home" className="hero">
-      {/* HERO IMAGE: controlled by --hero-image in globals.css. The fallback works until /public/images/hero-background.webp exists. */}
       <div className="hero-backdrop" aria-hidden="true" />
       <div className="hero-overlay" aria-hidden="true" />
       <div className="hero-layer">

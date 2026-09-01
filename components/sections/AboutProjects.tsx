@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/Button";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { ProjectImage } from "@/components/ui/ProjectImage";
 import { Reveal } from "@/components/ui/Reveal";
 import { siteConfig } from "@/lib/site-config";
 
@@ -11,7 +11,7 @@ export function AboutProjects() {
         <div className="projects-grid">
           {siteConfig.projects.map((project, index) => (
             <Reveal key={project.number} className="project-card" delay={index * 0.05}>
-              <ImagePlaceholder path={project.imagePath} alt={project.imageAlt} />
+              <ProjectImage path={project.imagePath} alt={project.imageAlt} />
               <div className="project-meta"><span>{project.category}</span><span>{project.year}</span></div>
               <h3>{project.title}</h3><p>{project.description}</p><a href="#contact">View project <span aria-hidden="true">↗</span></a>
             </Reveal>

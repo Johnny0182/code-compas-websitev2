@@ -4,7 +4,6 @@ import { siteConfig } from "@/lib/site-config";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import "./globals.css";
 
-// FONT SWAP: replace these two local files/configurations to change the body and heading fonts.
 const bodyFont = localFont({ src: "./fonts/geist-latin.woff2", variable: "--font-body-loaded", display: "swap" });
 const headingFont = localFont({ src: "./fonts/geist-mono-latin.woff2", variable: "--font-heading-loaded", display: "swap" });
 
@@ -24,17 +23,13 @@ const themeInitScript = `(() => {
 })();`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.seo.canonicalUrl),
   title: siteConfig.seo.title,
   description: siteConfig.seo.description,
-  alternates: { canonical: "/" },
   openGraph: {
     title: siteConfig.seo.ogTitle,
     description: siteConfig.seo.ogDescription,
     siteName: siteConfig.seo.siteName,
-    url: "/",
     type: "website",
-    images: [{ url: siteConfig.seo.socialImage, width: 1200, height: 630, alt: `${siteConfig.agencyName} preview` }],
   },
 };
 

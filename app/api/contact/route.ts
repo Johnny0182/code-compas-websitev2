@@ -1,4 +1,5 @@
 import { Resend } from "resend";
+import { createContactEmail } from "@/lib/contact-email";
 import { contactSchema } from "@/lib/contact-schema";
 
 export const runtime = "nodejs";
@@ -22,14 +23,16 @@ export async function POST(request: Request) {
       return Response.json({ error: "Contact delivery is not configured." }, { status: 503 });
     }
 
-    const { name, email, company, projectType, message } = parsed.data;
+    const { email } = parsed.data;
+    const emailContent = createContactEmail(parsed.data);
     const resend = new Resend(apiKey); // Install/configure Resend here; the package is server-only.
     const result = await resend.emails.send({
       from, // CONTACT_FROM_EMAIL: verified sender/domain in Resend.
       to, // CONTACT_TO_EMAIL: recipient inbox.
       replyTo: email,
-      subject: `New project inquiry from ${name}`,
-      text: [`Name: ${name}`, `Email: ${email}`, `Company: ${company || "—"}`, `Project type: ${projectType || "—"}`, "", message].join("\n"),
+      subject: emailContent.subject,
+      text: emailContent.text,
+      html: emailContent.html,
       // Add a separate resend.emails.send call here later for an optional auto-reply.
     });
     if (result.error) return Response.json({ error: "Email delivery failed. Please try again." }, { status: 502 });
