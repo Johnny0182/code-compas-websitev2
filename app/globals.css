@@ -159,18 +159,21 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-card > p { max-width: 42rem; margin: 0; color: var(--color-text-secondary); line-height: 1.65; }
 .project-card > a { display: inline-block; margin-top: 1.2rem; border-bottom: 1px solid currentColor; color: var(--color-primary); font-size: .76rem; font-weight: 800; text-transform: uppercase; }
 .project-card > a:hover { color: var(--color-primary-hover); }
-.about-block { display: grid; grid-template-columns: 1.05fr .95fr; gap: 3rem 8vw; margin-top: var(--section-space); padding-block: var(--section-space); border-top: 1px solid var(--color-border); }
-.about-intro h2 { max-width: 12ch; margin: 0; font-family: var(--font-heading); font-size: clamp(3.2rem, 6vw, 6.5rem); line-height: .94; letter-spacing: -.08em; text-transform: uppercase; }
-.about-copy { align-self: end; padding-bottom: .5rem; }
-.about-copy > p { max-width: 39rem; color: var(--color-text-secondary); font-size: clamp(1.05rem, 1.4vw, 1.3rem); line-height: 1.65; }
-.about-copy .about-kicker { color: var(--color-primary); font-size: .73rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.about-copy .about-statement { color: var(--color-text-primary); font-size: clamp(1.35rem, 2vw, 2rem); font-weight: 600; line-height: 1.35; letter-spacing: -.03em; }
-.about-copy .button { margin-top: 1.5rem; }
-.values-row { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
-.values-row div { display: flex; min-height: 8rem; align-items: center; gap: 1.3rem; padding: 1.5rem; border-right: 1px solid var(--color-border); }
-.values-row div:last-child { border-right: 0; }
-.values-row span { display: grid; width: 2rem; height: 2rem; flex: 0 0 auto; place-items: center; border: 1px solid currentColor; border-radius: 50%; font-size: .6rem; }
-.values-row p { margin: 0; font-family: var(--font-heading); font-size: clamp(1rem, 1.5vw, 1.3rem); font-weight: 700; letter-spacing: -.04em; text-transform: uppercase; }
+.about-block { margin-top: var(--section-space); padding-block: var(--section-space); border-top: 1px solid var(--color-border); }
+.about-simple { max-width: 74rem; }
+.about-title { margin: 0 0 clamp(2.75rem, 4vw, 4rem); font-family: var(--font-heading); font-weight: 700; line-height: .92; letter-spacing: -.08em; text-transform: uppercase; }
+.about-title-primary, .about-title-primary > span, .about-title-secondary { display: block; }
+.about-title-primary { font-size: clamp(2.1rem, 6.2vw, 6.5rem); }
+.about-title-secondary { margin-top: .65rem; font-size: clamp(1.8rem, 4.5vw, 4.6rem); letter-spacing: -.065em; }
+.about-title-secondary > span { display: inline; font-size: .78em; }
+.about-overview { max-width: 60rem; margin: 0; color: var(--color-text-secondary); font-size: clamp(1.2rem, 1.65vw, 1.5rem); line-height: 1.68; }
+.about-list { max-width: 62rem; margin: 3rem 0 2.5rem; padding-left: 1.5rem; list-style: disc; }
+.about-list li { margin-bottom: 1.15rem; padding-left: .35rem; color: var(--color-text-secondary); font-size: clamp(1rem, 1.2vw, 1.125rem); line-height: 1.65; }
+.about-list li:last-child { margin-bottom: 0; }
+.about-list li::marker { color: var(--color-primary); }
+.about-list span { display: inline-block; margin-right: .45rem; }
+.about-list strong { color: var(--color-text-primary); font-weight: 800; }
+.about-simple .button { margin-top: .25rem; }
 
 /* CONTACT + FOOTER */
 .contact-section { overflow: hidden; background: var(--color-strong-surface); color: var(--color-on-strong); transition: background-color .25s ease, color .25s ease; }
@@ -273,12 +276,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .projects-grid { display: block; }
   .project-card { margin-bottom: 4.5rem; }
   .project-card h3 { font-size: 1.65rem; }
-  .about-block { display: block; margin-top: 2rem; }
-  .about-intro h2 { max-width: 9ch; font-size: clamp(3rem, 13vw, 4.7rem); }
-  .about-copy { margin-top: 3.5rem; }
-  .values-row { grid-template-columns: 1fr; margin-top: 4rem; }
-  .values-row div { min-height: 5.8rem; border-right: 0; border-bottom: 1px solid var(--color-border); }
-  .values-row div:last-child { border-bottom: 0; }
+  .about-block { margin-top: 2rem; }
+  .about-title { margin-bottom: 2.5rem; }
+  .about-list { margin-block: 2rem; }
+  .about-list li { margin-bottom: 1rem; font-size: .95rem; }
   .contact-grid { display: block; }
   .contact-copy h2 { max-width: 8.8ch; font-size: clamp(3rem, 13vw, 4.8rem); }
   .contact-details { margin-top: 3rem; }

@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export function AboutProjects() {
   return (
-    <section id="about" className="section about-projects-section">
+    <section id="projects" className="section about-projects-section">
       <div className="page-shell">
         <Reveal><p className="section-kicker"><span>02</span>Selected projects</p><h2 className="projects-title">A few ways we make<br />the choice feel easy.</h2></Reveal>
         <div className="projects-grid">
@@ -17,12 +17,21 @@ export function AboutProjects() {
             </Reveal>
           ))}
         </div>
-        <div className="about-block">
-          <Reveal className="about-intro"><p className="section-kicker"><span>03</span>About us</p><h2>{siteConfig.about.heading}</h2></Reveal>
-          <Reveal className="about-copy"><p className="about-kicker">{siteConfig.about.kicker}</p><p>{siteConfig.about.body}</p><p className="about-statement">{siteConfig.about.statement}</p><Button href="#contact" variant="dark">Start a conversation</Button></Reveal>
-          <div className="values-row">
-            {siteConfig.about.values.map((value, index) => <div key={value}><span>0{index + 1}</span><p>{value}</p></div>)}
-          </div>
+        <div id="about" className="about-block">
+          <Reveal className="about-simple">
+            <h2 className="section-kicker"><span>03</span>About us</h2>
+            <h3 className="about-title">
+              <span className="about-title-primary"><span>{siteConfig.about.heading}</span><span>{siteConfig.about.headingSecondLine}</span></span>
+              <span className="about-title-secondary">{siteConfig.about.kicker} <span aria-hidden="true">✨</span></span>
+            </h3>
+            <p className="about-overview">{siteConfig.about.body}</p>
+            <ul className="about-list">
+              {siteConfig.about.capabilities.map((capability) => (
+                <li key={capability.title}><span aria-hidden="true">{capability.icon}</span><strong>{capability.title}:</strong> {capability.description}</li>
+              ))}
+            </ul>
+            <Button href="#contact" variant="dark">Start a conversation</Button>
+          </Reveal>
         </div>
       </div>
     </section>

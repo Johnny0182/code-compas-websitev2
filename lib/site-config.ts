@@ -23,11 +23,17 @@ export const siteConfig = {
     { number: "04", title: "The Lion and Lamb Church", category: "Web Design · Mobile App · Community", description: "A welcoming church website and companion app that help members plan visits, watch services, discover communities, receive alerts, and stay connected throughout the week.", year: "2026", imagePath: "/images/project-4-edited.png", imageAlt: "The Lion and Lamb church website with a church photograph and companion app download call to action" },
   ],
   about: {
-    kicker: "Small team. Clear thinking.",
-    heading: "Built to make your business the obvious choice.",
-    body: "We are a digital agency focused on building practical, memorable, and scalable digital experiences. We combine strategy, design, development, and automation to create solutions that support real business goals.",
-    statement: "No mystery process. No disposable templates. Just smart digital work shaped around what your business needs next.",
-    values: ["Strategy before decoration", "Useful by design", "Built to keep working"],
+    kicker: "Hablamos Español.",
+    heading: "Passionate Digital",
+    headingSecondLine: "Creators.",
+    body: "We are a bilingual digital agency based in Los Angeles, helping small businesses locally and across the globe. We take the headache out of technology by handling everything under one roof.",
+    capabilities: [
+      { icon: "💻", title: "Websites & Applications", description: "Takeout platforms, trade websites, and multilingual sites built to convert users into paying customers." },
+      { icon: "⚙️", title: "Operations & Automation", description: "Python scripts, Excel automations, and seamless accounting integrations." },
+      { icon: "🖥️", title: "Hardware Setup", description: "POS systems, server installations, computer and printer configuration, and Business OneDrive." },
+      { icon: "🎨", title: "Brand & Merch", description: "Full logo design, plus flyers, stickers, apparel, and promo items through our design partners." },
+      { icon: "🗣️", title: "Bilingual Training", description: "We train your Spanish- and English-speaking staff so your new tech actually gets used." },
+    ],
   },
   contact: {
     heading: "Let’s build something that works for your business.",
