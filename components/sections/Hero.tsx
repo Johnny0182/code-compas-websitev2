@@ -20,16 +20,16 @@ export function Hero() {
         <div className="hero-marquee" aria-label="Code Compas, websites, apps, custom software, business automation">
           <div className="hero-marquee-track">
             <div className="hero-marquee-group">
-              <span>CODE COMPAS — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
-              <span>CODE COMPAS — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
-              <span>CODE COMPAS — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
-              <span>CODE COMPAS — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
+              <span>🤠 CODE COMPAS 🤠 — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
+              <span>🤠 CODE COMPAS 🤠— WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
+              <span>🤠 CODE COMPAS 🤠 — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
+              <span>🤠 CODE COMPAS 🤠 — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
             </div>
             <div className="hero-marquee-group" aria-hidden="true">
-              <span>CODE COMPAS — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
-              <span>CODE COMPAS — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
-              <span>CODE COMPAS — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
-              <span>CODE COMPAS — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
+              <span>🤠 CODE COMPAS 🤠 — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
+              <span>🤠 CODE COMPAS 🤠 — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
+              <span>🤠 CODE COMPAS 🤠 — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
+              <span>🤠 CODE COMPAS 🤠 — WEBSITES — APPS — CUSTOM SOFTWARE — BUSINESS AUTOMATION —</span>
             </div>
           </div>
         </div>
