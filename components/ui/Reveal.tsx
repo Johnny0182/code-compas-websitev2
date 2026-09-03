@@ -1,13 +1,9 @@
-"use client";
-
-import { motion, useReducedMotion } from "motion/react";
 import type { ReactNode } from "react";
 
-export function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
-  const reduceMotion = useReducedMotion();
-  return (
-    <motion.div className={className} initial={reduceMotion ? false : { opacity: 0, y: 24 }} whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.12 }} transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}>
-      {children}
-    </motion.div>
-  );
+export function Reveal({ children, className = "" }: { children: ReactNode; className?: string; delay?: number }) {
+  // Keep important content visible in the server-rendered HTML. The previous
+  // animation rendered every section at opacity: 0 until client JavaScript and
+  // IntersectionObserver both ran, so a blocked/stale script could hide the
+  // entire page between the hero and footer.
+  return <div className={className}>{children}</div>;
 }
