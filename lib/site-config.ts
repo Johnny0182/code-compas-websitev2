@@ -24,8 +24,6 @@ export const siteConfig = {
   ],
   about: {
     kicker: "Hablamos Español.",
-    heading: "Passionate Digital",
-    headingSecondLine: "Creators.",
     body: "We are a bilingual digital agency based in Los Angeles, helping small businesses locally and across the globe. We take the headache out of technology by handling everything under one roof.",
     capabilities: [
       { icon: "💻", title: "Websites & Applications", description: "Takeout platforms, trade websites, and multilingual sites built to convert users into paying customers." },
@@ -36,7 +34,6 @@ export const siteConfig = {
     ],
   },
   contact: {
-    heading: "Let’s build something that works for your business.",
     body: "Tell us what you’re trying to change. We’ll come back with a clear next step.",
     email: "Use the inquiry form",
     socialLabel: "Instagram",

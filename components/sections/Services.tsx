@@ -5,7 +5,7 @@ export function Services() {
   return (
     <section id="services" className="section services-section">
       <div className="page-shell">
-        <Reveal><p className="section-kicker"><span>01</span>What we do</p><h2 className="services-title">Useful digital work,<br />made unmistakable.</h2></Reveal>
+        <Reveal><h2 className="section-kicker"><span>01</span>What we do</h2></Reveal>
         <div className="service-list">
           {siteConfig.services.map((service, index) => (
             <Reveal key={service.letter} delay={index * 0.04}>

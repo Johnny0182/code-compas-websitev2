@@ -130,7 +130,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* SERVICES */
 .services-section { background: var(--color-background); transition: background-color .25s ease, color .25s ease; }
-.services-title, .projects-title { margin: 0 0 clamp(4rem, 8vw, 8rem); font-family: var(--font-heading); font-size: clamp(3rem, 7vw, 7.4rem); font-weight: 700; line-height: .96; letter-spacing: -.08em; text-transform: uppercase; }
 .service-list { border-top: 1px solid var(--services-divider); }
 .service-row { display: grid; grid-template-columns: 4.5rem minmax(18rem, 1.35fr) minmax(17rem, 1fr) auto; gap: 2rem; min-height: 12.5rem; align-items: center; border-bottom: 1px solid var(--services-divider); transition: background-color .18s ease, transform .18s ease; }
 .service-row:hover { background: var(--color-row-hover); transform: translateY(-1px); }
@@ -162,9 +161,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .about-block { margin-top: var(--section-space); padding-block: var(--section-space); border-top: 1px solid var(--color-border); }
 .about-simple { max-width: 74rem; }
 .about-title { margin: 0 0 clamp(2.75rem, 4vw, 4rem); font-family: var(--font-heading); font-weight: 700; line-height: .92; letter-spacing: -.08em; text-transform: uppercase; }
-.about-title-primary, .about-title-primary > span, .about-title-secondary { display: block; }
-.about-title-primary { font-size: clamp(2.1rem, 6.2vw, 6.5rem); }
-.about-title-secondary { margin-top: .65rem; font-size: clamp(1.8rem, 4.5vw, 4.6rem); letter-spacing: -.065em; }
+.about-title-secondary { display: block; margin-top: .65rem; font-size: clamp(1.8rem, 4.5vw, 4.6rem); letter-spacing: -.065em; }
 .about-title-secondary > span { display: inline; font-size: .78em; }
 .about-overview { max-width: 60rem; margin: 0; color: var(--color-text-secondary); font-size: clamp(1.2rem, 1.65vw, 1.5rem); line-height: 1.68; }
 .about-list { max-width: 62rem; margin: 3rem 0 2.5rem; padding-left: 1.5rem; list-style: disc; }
@@ -178,7 +175,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 /* CONTACT + FOOTER */
 .contact-section { overflow: hidden; background: var(--color-strong-surface); color: var(--color-on-strong); transition: background-color .25s ease, color .25s ease; }
 .contact-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 7vw; padding-block: var(--section-space); }
-.contact-copy h2 { max-width: 10ch; margin: 0; font-family: var(--font-heading); font-size: clamp(3.3rem, 6.3vw, 7rem); line-height: .93; letter-spacing: -.08em; text-transform: uppercase; }
 .contact-copy > p:not(.section-kicker) { max-width: 32rem; margin: 2rem 0 0; color: var(--color-strong-muted); font-size: 1.05rem; line-height: 1.65; }
 .contact-details { display: grid; grid-template-columns: 5rem 1fr; gap: .8rem 1rem; margin-top: 4rem; font-size: .78rem; }
 .contact-details span { color: var(--color-strong-subtle); text-transform: uppercase; letter-spacing: .1em; }
@@ -267,8 +263,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-actions { width: 100%; flex-wrap: wrap; align-items: stretch; justify-content: flex-start; margin-top: 2.2rem; gap: .75rem; }
   .hero-secondary-button { width: 100%; min-height: 3.6rem; }
   .button { width: 100%; min-height: 3.6rem; }
-  .services-title, .projects-title { margin-bottom: 3.7rem; font-size: clamp(2.6rem, 12.6vw, 4.4rem); }
-  .services-title br, .projects-title br { display: none; }
   .section-kicker { gap: 1rem; margin-bottom: 2rem; font-size: 1.0625rem; }
   .section-kicker span { width: 2.75rem; height: 2.75rem; font-size: .75rem; }
   .service-row { grid-template-columns: 2.35rem 1fr auto; min-height: 0; padding-block: 2.1rem; }
@@ -286,9 +280,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .about-list { margin-block: 2rem; }
   .about-list li { margin-bottom: 1rem; font-size: .95rem; }
   .contact-grid { display: block; }
-  .contact-copy h2 { max-width: 8.8ch; font-size: clamp(3rem, 13vw, 4.8rem); }
   .contact-details { margin-top: 3rem; }
-  .contact-form-wrap { margin-top: 4.5rem; }
+  .contact-form-wrap { margin-top: 3rem; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .form-submit { align-items: stretch; flex-direction: column; justify-content: center; padding-block: 1.6rem; }
   .form-submit button { width: 100%; }
