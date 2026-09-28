@@ -10,6 +10,7 @@ export const contactSchema = z.object({
   projectType: cleanText(80).optional().default(""),
   message: cleanText(3000).pipe(z.string().min(10, "Please share at least a few details.")),
   website: z.string().max(0, "Spam detected.").optional().default(""),
+  submissionId: z.uuid(),
 });
 
 export type ContactInput = z.infer<typeof contactSchema>;
