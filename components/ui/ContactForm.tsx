@@ -38,7 +38,7 @@ export function ContactForm() {
       }
 
       setStatus("success");
-      setNotice(data.message ?? "Thanks — your message is on its way.");
+      setNotice(data.message ?? "Thank you, your message has been delivered 🤠");
       submissionId.current = "";
       form.reset();
     } catch (error) {
@@ -55,7 +55,8 @@ export function ContactForm() {
       aria-busy={status === "loading"}
     >
       <div className="form-row"><Field name="name" label="Your name" required minLength={2} maxLength={80} autoComplete="name" /><Field name="email" label="Email address" type="email" required maxLength={254} autoComplete="email" /></div>
-      <div className="form-row"><Field name="company" label="Company (optional)" maxLength={100} autoComplete="organization" /><label className="field"><span>Project type (optional)</span><select name="projectType" defaultValue=""><option value="">Choose one</option><option>Website</option><option>Web app</option><option>Automation</option><option>Custom solution</option></select></label></div>
+      <div className="form-row"><Field name="company" label="Company (optional)" maxLength={100} autoComplete="organization" /><Field name="phone" label="Phone number (optional)" type="tel" maxLength={30} autoComplete="tel" /></div>
+      <label className="field"><span>Project type (optional)</span><select name="projectType" defaultValue=""><option value="">Choose one</option><option>Website</option><option>Web app</option><option>Automation</option><option>Custom solution</option></select></label>
       <label className="field"><span>Tell us about the project</span><textarea name="message" rows={5} required minLength={10} maxLength={3000} placeholder="What are you hoping to build or improve?" /></label>
       <label className="honeypot" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
       <div className="form-submit"><button type="submit" disabled={status === "loading"}>{status === "loading" ? "Sending…" : "Send inquiry"}<span aria-hidden="true">↗</span></button><p className={`form-notice form-notice--${status}`} role="status" aria-live="polite">{notice}</p></div>

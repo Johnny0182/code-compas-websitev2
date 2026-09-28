@@ -34,9 +34,10 @@ export const siteConfig = {
     ],
   },
   contact: {
-    body: "Tell us what you’re trying to change. We’ll come back with a clear next step.",
-    email: "Use the inquiry form",
-    socialLabel: "Instagram",
+    body: "Tell us what you need help with or ask about any service we offer. We reply within 24 hours. Add your phone number if you’d like a call instead (totally optional). We speak Spanish and can help with everything from apps and automations to clean, simple websites.",
+    email: "codecompas@outlook.com",
+    socialLabel: "@code.compas",
+    socialHref: "https://www.instagram.com/code.compas/",
   },
   footerStatement: "Digital strategy, design, development, and automation for ambitious businesses.",
   seo: {

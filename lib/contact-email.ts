@@ -9,12 +9,13 @@ function escapeHtml(value: string) {
     .replaceAll("'", "&#039;");
 }
 
-export function createContactEmail({ name, email, company, projectType, message }: ContactInput) {
+export function createContactEmail({ name, email, company, phone, projectType, message }: ContactInput) {
   const subject = `New project inquiry from ${name}`;
   const text = [
     `Name: ${name}`,
     `Email: ${email}`,
     `Company: ${company || "—"}`,
+    `Phone: ${phone || "—"}`,
     `Project type: ${projectType || "—"}`,
     "",
     message,
@@ -24,6 +25,7 @@ export function createContactEmail({ name, email, company, projectType, message 
     ["Name", name],
     ["Email", email],
     ["Company", company || "—"],
+    ["Phone", phone || "—"],
     ["Project type", projectType || "—"],
   ];
 

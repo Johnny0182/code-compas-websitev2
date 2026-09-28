@@ -40,7 +40,7 @@ export async function POST(request: Request) {
     body.website.length > 0
   ) {
     return Response.json(
-      { emailSent: true, message: "Thanks — your message is on its way." },
+      { emailSent: true, message: "Thank you, your message has been delivered 🤠" },
       { headers: { "Cache-Control": "no-store" } },
     );
   }
@@ -101,7 +101,7 @@ export async function POST(request: Request) {
     }
 
     return Response.json(
-      { emailSent: true, message: "Thanks — your message is on its way." },
+      { emailSent: true, message: "Thank you, your message has been delivered 🤠" },
       { headers: { "Cache-Control": "no-store" } },
     );
   } catch (error) {
